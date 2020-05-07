@@ -21,6 +21,16 @@ stage('Ant build')
 }
     }
   }
+  stage(''Deployment')
+   {
+     steps
+     {
+     sshagent(['tomcat_Ant']) 
+       {
+         sh 'scp -o StrictHostKeyChecking=no **/*.war ec2-user@3.89.196.242:/var/lib/webapp
+       }
+     }
+   }
   
 }
 }
