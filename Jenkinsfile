@@ -21,17 +21,17 @@ stage('Ant build')
 }
     }
   }
-  stage('Deployment')
-   {
-     steps
-     {
-     sshagent(['tomcat_Ant']) 
-       {
-         sh 'scp -o StrictHostKeyChecking=no */target/*.war ec2-user@3.89.196.242:/var/lib/tomcat/webapps/
-         //sh 'scp -o StrictHostKeychecking=no */target/*.war ec2-user@3.83.121.64:/var/lib/tomcat/webapps 
-       }
-     }
-   }
+  //stage('Deployment')
+   //{
+   //  steps
+  //   {
+  //   sshagent(['tomcat_Ant']) 
+  //     {
+   //      sh 'scp -o StrictHostKeyChecking=no */target/*.war ec2-user@3.89.196.242:/var/lib/tomcat/webapps/
+    //     //sh 'scp -o StrictHostKeychecking=no */target/*.war ec2-user@3.83.121.64:/var/lib/tomcat/webapps 
+      // }
+   //  }
+   //}
   
 }
 }
