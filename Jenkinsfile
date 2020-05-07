@@ -21,7 +21,7 @@ stage('Ant build')
 }
     }
   }
-  stage(''Deployment')
+  stage('Deployment')
    {
      steps
      {
