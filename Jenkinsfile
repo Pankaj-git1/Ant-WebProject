@@ -27,7 +27,7 @@ stage('Ant build')
      {
      sshagent(['tomcat_Ant']) 
        {
-         sh 'scp -o StrictHostKeyChecking=no **/*.war ec2-user@3.89.196.242:/var/lib/webapp
+         sh 'scp -o StrictHostKeyChecking=no **/*.war ec2-user@3.89.196.242:/var/lib/webapp/
        }
      }
    }
