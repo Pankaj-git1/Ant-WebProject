@@ -1,3 +1,4 @@
+currentBuild.displayName = "Ant-pipeline-#"+currentBuild.number
 pipeline
 {
 agent any
