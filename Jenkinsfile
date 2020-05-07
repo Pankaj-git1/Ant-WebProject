@@ -12,9 +12,10 @@ git branch: 'master', url: 'https://github.com/Pankaj-git1/Ant-WebProject.git'
 }
 stage('Ant build')  
   {
-    Steps
+    steps
     {
-    withAnt(installation: 'Local_Ant', jdk: 'Local_Java') {
+    withAnt(installation: 'Local_Ant', jdk: 'Local_Java') 
+      {
     sh 'ant init '
 }
     }
